@@ -3,7 +3,8 @@ import {View, Text} from 'react-native';
 
 const Menu = () => {
   return (
-    <View style={{marginHorizontal: 20}}>
+    <View style={{marginHorizontal: 20}}> 
+      <Text style={{fontSize: 22}}>Menu</Text>
       <Text>Daftar Menu</Text>
     </View>
   );
