@@ -1,13 +1,13 @@
-import React, {useState, useEffect} from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
-import Home from './src/components/Home';
-import Image from './src/components/Image';
-import Menu from './src/components/Menu';
+import React, { useState, useEffect } from 'react';
+import { View, Text, TouchableOpacity } from 'react-native';
+import Home from './src/Component/Home';
+import Image from './src/Component/Image';
+import Menu from './src/Component/Menu';
 const App = () => {
   const [activeMenu, setActiveMenu] = useState('Home');
 
   return (
-    <View style={{flex: 1}}>
+    <View style={{ flex: 1 }}>
       <View
         style={{
           flexDirection: 'row',
@@ -32,7 +32,7 @@ const App = () => {
             borderRadius: 9,
           }}
           onPress={() => setActiveMenu('Home')}>
-          <Text style={{color: activeMenu == 'Home' ? '#FFFFFF' : '#9ea3b0'}}>
+          <Text style={{ color: activeMenu == 'Home' ? '#FFFFFF' : '#9ea3b0' }}>
             Home
           </Text>
         </TouchableOpacity>
@@ -48,7 +48,7 @@ const App = () => {
             borderRadius: 9,
           }}
           onPress={() => setActiveMenu('Image')}>
-          <Text style={{color: activeMenu == 'Image' ? '#FFFFFF' : '#9ea3b0'}}>
+          <Text style={{ color: activeMenu == 'Image' ? '#FFFFFF' : '#9ea3b0' }}>
             Image
           </Text>
         </TouchableOpacity>
@@ -65,7 +65,7 @@ const App = () => {
           }}
           onPress={() => setActiveMenu('Menu')}>
           <Text
-            style={{color: activeMenu == 'Menu' ? '#FFFFFF' : '#9ea3b0'}}>
+            style={{ color: activeMenu == 'Menu' ? '#FFFFFF' : '#9ea3b0' }}>
             Menu
           </Text>
         </TouchableOpacity>
