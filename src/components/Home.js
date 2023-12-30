@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import {View, Text} from 'react-native';
+
 const Home = () => {
   return (
     <View style={{marginHorizontal: 20}}>
